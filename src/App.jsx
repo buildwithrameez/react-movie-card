@@ -2,7 +2,7 @@
 export const Moviecard  = () => {
   return (<div>
     <div>
-      <img src="./Breaking-Bad.jpeg" alt="" />
+      <img width='40%' src="./Breaking-Bad.jpeg" alt="" />
     </div>
     <h1>
      <b>Movie Name: </b>Breaking Bad
