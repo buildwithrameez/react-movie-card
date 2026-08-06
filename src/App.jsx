@@ -1,5 +1,16 @@
 
 export const Moviecard  = () => {
+  return <div>
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+
+  </div>
+};
+
+const NetflixSeries = () => {
   return (<div>
     <div>
       <img width='40%' src="./Breaking-Bad.jpeg" alt="" />
