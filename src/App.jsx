@@ -27,18 +27,22 @@ export const Moviecard  = () => {
 };
 
 const NetflixSeries = () => {
+  // variables in jsx
+  const name = 'Breaking Bad';
+  const rating = '9.5';
+  const summary = "A mild-mannered high school chemistry teacher diagnosed with terminal lung cancer partners with a former student to manufacture and sell methamphetamine to secure his family's financial future, gradually transforming into a ruthless drug kingpin.";
   return (<div>
     <div>
       <img width='40%' src="./Breaking-Bad.jpeg" alt="" />
     </div>
     <h1>
-     <b>Movie Name: </b>Breaking Bad
+     <b>Movie Name: </b>{name}
     </h1>
     <h2>
-     <b>Rating: </b>9.5
+     <b>Rating: </b>{rating}
     </h2>
     <h4>
-     <b>Summary: </b>A mild-mannered high school chemistry teacher diagnosed with terminal lung cancer partners with a former student to manufacture and sell methamphetamine to secure his family's financial future, gradually transforming into a ruthless drug kingpin.
+     <b>Summary: </b>{summary}
     </h4>
   </div>);
 };
