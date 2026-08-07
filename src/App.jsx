@@ -1,10 +1,6 @@
-import { NetflixSeries } from "./components/NetflixSeries"
+import NetflixSeries  from "./components/NetflixSeries"
 export const Moviecard  = () => {
   return <>
-  <NetflixSeries />
-  <NetflixSeries />
-  <NetflixSeries />
-  <NetflixSeries />
   <NetflixSeries />
   </>
    
