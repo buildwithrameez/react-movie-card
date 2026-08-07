@@ -1,4 +1,5 @@
 import seriesData from '../api/seriesData.json'
+import Cardlist from './Cardlist';
 const NetflixSeries = () => {
   // variables in jsx
   // const name = 'Breaking Bad';
@@ -35,29 +36,9 @@ const NetflixSeries = () => {
   return(<>
     <ul>
       {seriesData.map((currElement) => {
-      return (<li key={currElement.id}>
-      <div>
-        <img style={{'marginTop':'20px'}} width='50%' src={currElement.img_url} alt="" />
-      </div>
-    <h2>
-     <b>Movie Name: </b>{currElement.name}
-    </h2>
-    <h3>
-     <b>Rating: </b>{currElement.rating}
-    </h3>
-    <p>
-     <b>Summary: </b>{currElement.description}
-    </p>
-    <p>
-      <b>Genre:</b>{currElement.genre}
-    </p>
-    <p>
-       <b>Cost: </b>{currElement.cast}
-    </p>
-    <a href={currElement.watch_url} target='_blank'><button>Watch Now</button></a>
-    </li>)
-      })};
-      
+       return  <Cardlist key= 
+      {currElement.id} currElement = {currElement} /> 
+     })}
     </ul>
   </>);
 };
