@@ -35,10 +35,9 @@ const NetflixSeries = () => {
 
   return(<>
     <ul>
-      {seriesData.map((currElement) => {
-       return  <Cardlist key= 
+      {seriesData.map((currElement) => (<Cardlist key = 
       {currElement.id} currElement = {currElement} /> 
-     })}
+     ))}
     </ul>
   </>);
 };

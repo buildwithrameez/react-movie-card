@@ -1,8 +1,7 @@
 import NetflixSeries  from "./components/NetflixSeries"
 export const Moviecard  = () => {
-  return <>
-  <NetflixSeries />
-  </>
+  return <NetflixSeries />
+
    
 // in react it return only one elements so we add one parent and its childeran
   // <div>
