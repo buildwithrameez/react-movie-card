@@ -6,7 +6,7 @@ import { Practice } from './practices.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Moviecard /> */}
-     <Practice />
+    <Moviecard />
+    <Practice />
   </StrictMode>,
 )
