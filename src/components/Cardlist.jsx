@@ -1,10 +1,10 @@
-const Cardlist = (props) => {
-  const {name,rating,description,genre,cast,watch_url} = props.currElement;
+const Cardlist = ({ data }) => {
+  const {id,name,rating,description,genre,cast,watch_url,img_url} = data;
   console.log(name);
   
     return (<li>
       <div>
-        <img style={{'marginTop':'20px'}} width='50%' src={props.currElement.img_url} alt="" />
+        <img style={{'marginTop':'20px'}} width='50%' src={img_url} alt="" />
       </div>
     <h2>
      <b>Movie Name: </b>{name}
