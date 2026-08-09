@@ -1,6 +1,9 @@
 import style from './Netflix.module.css'
+import styled from 'styled-components'
+
 const Cardlist = ({ data }) => {
   const { name, rating, description, genre, cast, watch_url, img_url } = data;
+  
   const comStyle = rating >= 8.5 ? style.superHit : style.nftRating;
 
   return (
