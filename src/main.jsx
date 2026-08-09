@@ -7,8 +7,12 @@ import Profile from './components/Profile.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Moviecard />
-    <Practice /> */}
-    <Profile />
+    <Moviecard />
+
+    {/* <Practice />
+
+     challenge file
+    <Profile /> */} 
+   
   </StrictMode>,
 )

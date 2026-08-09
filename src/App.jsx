@@ -1,6 +1,10 @@
+import './components/heading.css'
 import NetflixSeries  from "./components/NetflixSeries"
 export const Moviecard  = () => {
-  return <NetflixSeries />
+  return <section className="container">
+      <h1 className="heading">List of Best Netflix Series</h1>
+        <NetflixSeries />
+  </section>
 
    
 // in react it return only one elements so we add one parent and its childeran
