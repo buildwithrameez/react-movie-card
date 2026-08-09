@@ -6,18 +6,18 @@ body{
 }
 
 .container{
-  max-width: ;
+  max-width: 1420px;
   margin: 0 auto;
   padding: 2.6rem 1.4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 ul{
   height: auto;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  
   gap: 45px;
-
 }
 
 /* Base Card Styling */ 
@@ -125,13 +125,20 @@ ul{
   max-width: 75%;
 }
 
-.nft-rating {
+.com-rating{
   background: rgba(255, 255, 255, 0.1);
   padding: 3px 8px;
   border-radius: 6px;
   font-size: 0.85rem;
   font-weight: bold;
-  color: #ffb606;
+}
+
+.nft-rating {
+  color: #f3bc3c;
+}
+
+.super-hit {
+  color: rgb(74, 235, 74);
 }
 
 /* Genre Pills */
@@ -209,3 +216,4 @@ ul{
      grid-template-columns: repeat(2,1fr);
   }
 };
+

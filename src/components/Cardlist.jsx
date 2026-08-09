@@ -1,6 +1,7 @@
 
 const Cardlist = ({ data }) => {
-  const { id, name, rating, description, genre, cast, watch_url, img_url } = data;
+  const { name, rating, description, genre, cast, watch_url, img_url } = data;
+  const comStyle = rating >= 8.5 ? "super-hit" : "nft-rating"
 
   return (
     <li className="nft-card">
@@ -19,7 +20,7 @@ const Cardlist = ({ data }) => {
       <div className="nft-content">
         <div className="nft-header">
           <h2 className="nft-title">{name}</h2>
-          <span className="nft-rating">⭐ {rating}</span>
+          <span className={`com-rating ${comStyle}`}> * {rating}</span>
         </div>
 
         <p className="nft-genre"><span>{genre}</span></p>
