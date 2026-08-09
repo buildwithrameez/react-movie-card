@@ -125,21 +125,6 @@ ul{
   max-width: 75%;
 }
 
-.com-rating{
-  background: rgba(255, 255, 255, 0.1);
-  padding: 3px 8px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
-.nft-rating {
-  color: #f3bc3c;
-}
-
-.super-hit {
-  color: rgb(74, 235, 74);
-}
 
 /* Genre Pills */
 .nft-genre {

@@ -1,7 +1,7 @@
-
+import style from './Netflix.module.css'
 const Cardlist = ({ data }) => {
   const { name, rating, description, genre, cast, watch_url, img_url } = data;
-  const comStyle = rating >= 8.5 ? "super-hit" : "nft-rating"
+  const comStyle = rating >= 8.5 ? style.superHit : style.nftRating;
 
   return (
     <li className="nft-card">
@@ -20,7 +20,7 @@ const Cardlist = ({ data }) => {
       <div className="nft-content">
         <div className="nft-header">
           <h2 className="nft-title">{name}</h2>
-          <span className={`com-rating ${comStyle}`}> * {rating}</span>
+          <span className={`${style.comRating} ${comStyle}`}> * {rating}</span>
         </div>
 
         <p className="nft-genre"><span>{genre}</span></p>

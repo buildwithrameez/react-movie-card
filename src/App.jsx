@@ -1,8 +1,9 @@
-import './components/heading.css'
+import './components/Netflix.module.css'
+import style from './components/Netflix.module.css'
 import NetflixSeries  from "./components/NetflixSeries"
 export const Moviecard  = () => {
   return <section className="container">
-      <h1 className="heading">List of Best Netflix Series</h1>
+      <h1 className={style.heading}>List of Best Netflix Series</h1>
         <NetflixSeries />
   </section>
 
