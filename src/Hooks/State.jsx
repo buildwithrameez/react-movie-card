@@ -1,3 +1,4 @@
+import '../Hooks/style.css'
 import { useState } from "react";
 export const State = () => {
   //   let value = 0;
@@ -14,7 +15,7 @@ export const State = () => {
   };
   return (
     <>
-      <div className="main-div">
+      <div className="mainDiv">
         <h1>{count}</h1>
         <button onClick={handleButtonClick}>Increment</button>
       </div>
@@ -26,7 +27,7 @@ export const State = () => {
 function ChildComponent({ count }) {
   console.log("Child Component rendered");
   return (
-    <div className="main-div">
+    <div className="mainDiv">
       <h2> Child Component - {count} </h2>
     </div>
   );
