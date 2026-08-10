@@ -5,15 +5,16 @@ import { Moviecard }  from './App.jsx'
 import { Practice } from './practices.jsx'
 import Profile from './components/Profile.jsx'
 import { EventHandling } from './components/Events.jsx'
+import { State } from './Hooks/State.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <Moviecard /> */}
-    <EventHandling />
     {/* <Practice />
 
      challenge file
     <Profile /> */} 
-   
+    {/* <EventHandling /> */}
+    <State />
   </StrictMode>,
 )
