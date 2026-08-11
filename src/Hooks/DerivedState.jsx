@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { State } from "./State";
+import '../Hooks/style.css'
 // challenge Test
 
 // method 1 using map
@@ -34,15 +35,23 @@ export const DerivedState2 = () => {
    {name : 'Tuqeer', age : 17}
   ]);
   
-    return <div className="mainDev">
-       <h1>User</h1>
+  const userCount = user.length;
+  const average = (user.reduce((accum,curEle) => accum + curEle.age, 0))/userCount;
+
+    return <div className="mainDiv">
+       <h1>User</h1>)
        <ul>
          {user.map((currElement,index) => {
             const {name,age} = currElement;
-          return <li>
+          return <>
+          <li>
                {name} - {age}
           </li>
-         })};
+          </>
+         })}
+         <p>User Number: {userCount}</p>
+         <p>Aerage age: {average}</p>
+
        </ul>
     </div>
 };
