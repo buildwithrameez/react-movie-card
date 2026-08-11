@@ -8,7 +8,7 @@ import { EventHandling } from './components/Events.jsx'
 import { State } from './Hooks/State.jsx'
 import { DerivedState2 } from './Hooks/DerivedState.jsx'
 import { LiftstateUp } from './Hooks/LiftingState.jsx'
-
+import { ToggleSwitch } from './Hooks/ToggleSwitch.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <EventHandling />
     <State /> */}
     {/* <DerivedState2 /> */}
-    <LiftstateUp />
+    {/* <LiftstateUp /> */}
+    <ToggleSwitch />
   </StrictMode>,
 )
