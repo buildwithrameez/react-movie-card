@@ -35,11 +35,12 @@ export const DerivedState2 = () => {
    {name : 'Tuqeer', age : 17}
   ]);
   
+  // Derived State
   const userCount = user.length;
   const average = (user.reduce((accum,curEle) => accum + curEle.age, 0))/userCount;
 
     return <div className="mainDiv">
-       <h1>User</h1>)
+       <h1>User</h1>
        <ul>
          {user.map((currElement,index) => {
             const {name,age} = currElement;

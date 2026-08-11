@@ -7,6 +7,8 @@ import Profile from './components/Profile.jsx'
 import { EventHandling } from './components/Events.jsx'
 import { State } from './Hooks/State.jsx'
 import { DerivedState2 } from './Hooks/DerivedState.jsx'
+import { LiftstateUp } from './Hooks/LiftingState.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,6 +18,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Profile /> 
     <EventHandling />
     <State /> */}
-    <DerivedState2 />
+    {/* <DerivedState2 /> */}
+    <LiftstateUp />
   </StrictMode>,
 )
