@@ -1,4 +1,4 @@
-.mainDiv{
+.mainDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,4 +10,24 @@
     padding: 0.8rem 0.4rem;
     border-radius: 12px;
     background: rgb(182, 132, 229);
+}
+
+.mainDiv input{
+    margin-top: 20px;
+    padding: 0.6rem 0.5rem;
+    border-radius: 12px;
+    border: none;
+}
+
+.mainDiv p {
+    width: 400px;
+    height: auto;
+    padding: 0.4rem 0.2rem;
+    border-radius: 12px;
+    border: 1px rgb(70, 72, 70) solid;
+    overflow: hidden; 
+    white-space: normal; 
+    word-break: break-word; 
+    display: flex; 
+    flex-direction: column;
 }

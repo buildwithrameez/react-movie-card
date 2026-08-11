@@ -22,6 +22,6 @@ const InputComponent = ({inputValue,setInputValue}) => {
 
 const DisplayeComponent  = ({inputValue}) => {
     return <div className="mainDiv">
-        <h1>User Name: {inputValue}</h1>  
+        <p>User Name: {inputValue}</p>  
     </div>
 };
