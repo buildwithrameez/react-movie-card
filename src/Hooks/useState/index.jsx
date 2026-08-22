@@ -1,4 +1,3 @@
-import "../Hooks.css";
 import { useState } from "react";
 
 export const Counter = () => {
@@ -22,3 +21,4 @@ export const Counter = () => {
     </div>
   );
 };
+

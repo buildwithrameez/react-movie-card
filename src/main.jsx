@@ -10,6 +10,7 @@ import { DerivedState2 } from './Hooks/DerivedState.jsx'
 import { LiftstateUp } from './Hooks/LiftingState.jsx'
 import { ToggleSwitch } from './Projects/ToggleSwitch/ToggleSwitch.jsx'
 import ShortCircuit from './components/ShortCircuit.jsx'
+import { Counter }from './Hooks/useState/index.jsx'
 import CounterChallenge from './Hooks/useState/Challenge.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -26,5 +27,6 @@ createRoot(document.getElementById('root')).render(
     {/* <ToggleSwitch /> */}
     {/* <ShortCircuit /> */}
     <CounterChallenge />
+    <Counter />
   </StrictMode>,
 )
