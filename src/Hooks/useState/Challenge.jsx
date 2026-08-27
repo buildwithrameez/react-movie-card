@@ -25,6 +25,7 @@ const handledecrement = () => {
 
 const handlereset = () => {
   setnumber(0);
+  setstep(1);
 };
 
 return <div className="main">
