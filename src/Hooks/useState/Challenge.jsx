@@ -11,51 +11,36 @@ import { useState } from "react";
 
 
 const CounterChallenge = () => {
-  const [count, setCount] = useState(0);
-  const [step, setStep] = useState(0);
 
-  const handleIncrement = () => {
-    setCount(count + step);
-  };
+const [number, setnumber] = useState(0);
+const [step, setstep] = useState(1);
 
-  const handleDecrement = () => {
-    setCount(count - step);
-  };
+const handleincrement = () => {
+    setnumber(number + step); 
+};
 
-  const handleReset = () => {
-    setCount(0);
-  };
+const handledecrement = () => {
+    setnumber(number - step); 
+};
 
-  return (
-    <div className="container state-container">
-      <h1>useState Challenge</h1>
+const handlereset = () => {
+  setnumber(0);
+};
 
-      <p>
-        Count: <span> {count} </span>
-      </p>
-
-      <div>
+return <div className="main">
+       <p><span>{number}</span></p>
+       <div>
         <label>
-          Step:
-          <input
-            type="number"
-            // value={step}
-            onChange={(e) => setStep(Number(e.target.value))}
-          />
+          Step: <input type="number" value={step} onChange={(e) => setstep(Number(e.target.value))} />
         </label>
-      </div>
+       </div>
 
-      <div className="grid-three-cols">
-        <button onClick={handleIncrement} disabled={count >= 100}>
-          Increment
-        </button>
-        <button onClick={handleDecrement} disabled={count <= 0}>
-          Decrement
-        </button>
-        <button onClick={handleReset}>Reset</button>
-      </div>
-    </div>
-  );
+       <div className="btn">
+        <button onClick={() => handleincrement()} disabled = {number >= 100}>Increment</button>
+        <button onClick={() => handledecrement()} disabled = {number <= 0}>decrement</button>
+        <button onClick={() => handlereset()}>Reset</button>
+       </div>
+</div>
 };
 
 export default CounterChallenge;

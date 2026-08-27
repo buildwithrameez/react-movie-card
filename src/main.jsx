@@ -27,6 +27,6 @@ createRoot(document.getElementById('root')).render(
     {/* <ToggleSwitch /> */}
     {/* <ShortCircuit /> */}
     <CounterChallenge />
-    <Counter />
+    {/* <Counter /> */}
   </StrictMode>,
 )
