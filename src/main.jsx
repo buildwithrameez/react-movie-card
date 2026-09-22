@@ -12,6 +12,7 @@ import { ToggleSwitch } from './Projects/ToggleSwitch/ToggleSwitch.jsx'
 import ShortCircuit from './components/ShortCircuit.jsx'
 import { Counter }from './Hooks/useState/index.jsx'
 import CounterChallenge from './Hooks/useState/Challenge.jsx'
+import { RegistrationForm } from './Hooks/useState/Registration.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,7 +27,8 @@ createRoot(document.getElementById('root')).render(
     {/* Mini Project */}
     {/* <ToggleSwitch /> */}
     {/* <ShortCircuit /> */}
-    <CounterChallenge />
     {/* <Counter /> */}
+    {/* <CounterChallenge /> */}
+    <RegistrationForm />
   </StrictMode>,
 )

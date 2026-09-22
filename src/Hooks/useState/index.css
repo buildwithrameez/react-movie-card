@@ -46,7 +46,7 @@ body {
   width: 500px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -124,6 +124,6 @@ p {
 /* Change styles for signup button on extra small screens */
 @media screen and (max-width: 300px) {
   .signupbtn {
-    width: 100%;
+    width: 80%;
   }
 }
