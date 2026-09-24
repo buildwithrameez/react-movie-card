@@ -13,6 +13,8 @@ import ShortCircuit from './components/ShortCircuit.jsx'
 import { Counter }from './Hooks/useState/index.jsx'
 import CounterChallenge from './Hooks/useState/Challenge.jsx'
 import { RegistrationForm } from './Hooks/useState/Registration.jsx'
+import { LoginForm } from './Hooks/useState/LoginForm.jsx'
+import { ContactForm } from './Hooks/useState/ContactFrom.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,6 +31,8 @@ createRoot(document.getElementById('root')).render(
     {/* <ShortCircuit /> */}
     {/* <Counter /> */}
     {/* <CounterChallenge /> */}
-    <RegistrationForm />
+    {/* <RegistrationForm /> */}
+    {/* <LoginForm /> */}
+    <ContactForm />
   </StrictMode>,
 )
