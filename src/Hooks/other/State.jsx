@@ -1,4 +1,4 @@
-import '../Hooks/style.css'
+import './style.css'
 import { useState } from "react";
 export const State = () => {
   //   let value = 0;

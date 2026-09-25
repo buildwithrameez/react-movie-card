@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { State } from "./State";
-import '../Hooks/style.css'
+import './style.css'
 // challenge Test
 
 // method 1 using map
